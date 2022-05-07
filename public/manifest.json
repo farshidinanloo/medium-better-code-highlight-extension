@@ -1,0 +1,23 @@
+{
+	"short_name": "React App",
+	"name": "Create React App Sample",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "medium code block",
+	"icons": {
+		"16": "darwinFav16.ico",
+		"48": "darwinFav48.ico",
+		"128": "darwinFav128.ico"
+	},
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff",
+	"content_scripts": [
+		{
+			"matches": ["https://medium.com/*"],
+			"js": ["js/382.ee04007e.js", "js/app.daf765af.js"],
+			"css": ["css/app.daf765af.css"]
+		}
+	]
+}

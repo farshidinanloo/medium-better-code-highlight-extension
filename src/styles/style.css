@@ -1,0 +1,17 @@
+pre {
+	border-radius: 10px;
+}
+
+pre code {
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	white-space: pre-wrap;
+}
+
+pre code {
+	font-size: 0.9rem !important;
+}
+
+pre code * {
+	font-style: normal !important;
+}
