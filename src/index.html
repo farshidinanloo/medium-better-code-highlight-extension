@@ -18,35 +18,16 @@
 					voluptatem sapiente enim nihil nisi tenetur corporis quo.
 				</span>
 
-				<div className="code_block_one">
-					<pre>
+				<pre>
           <span>
-            "const name = 'first';" <br /> " const name = 'first'"
+            const processData = ({ userData, sessionPrefences }) =>   save('userData', userData)
+  .then(() => save('session', sessionPrefences))
+  .then(() => ({ userData, sessionPrefences }))
+  .catch(handleErrorSomehow)
           </span>
-
-          <span>
-            "const name = 'first';" <br /> " const name = 'first'"
-          </span>
-
-          <span>
-            "const name = 'first';" <br /> " const name = 'first'"
-          </span>
-            <span class="hljs-keyword">var</span>
-						officersIds = officers.
-						<span class="hljs-title function_">map</span>
-						<span class="hljs-keyword">function</span>
-						(
-							(
-								<span class="hljs-params">officer</span>
-								) {
-									<span class="hljs-keyword">return</span>
-									officer.
-									<span class="hljs-property">id</span>
-									;
-});
-
         </pre>
-				</div>
+
+
 
 				<span>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quod

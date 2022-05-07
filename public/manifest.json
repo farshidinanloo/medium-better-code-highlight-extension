@@ -15,7 +15,7 @@
 	"background_color": "#ffffff",
 	"content_scripts": [
 		{
-			"matches": ["https://medium.com/*"],
+			"matches": ["https://*.medium.com/*"],
 			"js": ["js/382.ee04007e.js", "js/app.daf765af.js"],
 			"css": ["css/app.daf765af.css"]
 		}

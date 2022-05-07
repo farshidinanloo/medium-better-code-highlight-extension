@@ -1,4 +1,3 @@
-import '../styles/index.scss';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/night-owl.css';
 import prettier from 'prettier/standalone';
@@ -16,12 +15,10 @@ function getSapnText(element) {
 	const data = [];
 
 	for (const item of element.childNodes) {
-		if (item.tagName === 'SPAN') {
-			data.push(item.textContent);
-		}
+		data.push(item.innerText);
 	}
 
-	const code = data.join(' ').replaceAll('" "', '\n').replaceAll('"', '');
+	let code = data.join(' ').replaceAll('" "', '\n').replaceAll('"', '');
 
 	try {
 		const forattedCode = prettier.format(code, {
@@ -29,12 +26,14 @@ function getSapnText(element) {
 			plugins: [parserBabel],
 		});
 		if (forattedCode) {
-			const html = hljs.highlight(forattedCode, {
-				language: 'javascript',
-			}).value;
-
-			parentNode.classList.add('hljs');
-			parentNode.innerHTML = `<code class='hljs'>${html}</code>`;
+			code = forattedCode;
 		}
 	} catch (error) {}
+
+	const html = hljs.highlight(code, {
+		language: 'javascript',
+	}).value;
+
+	parentNode.classList.add('hljs');
+	parentNode.innerHTML = `<code class='hljs'>${html}</code>`;
 }
