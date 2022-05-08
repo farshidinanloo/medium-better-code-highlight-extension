@@ -13,8 +13,8 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.medium.com/*"],
-			"js": ["js/382.ee04007e.js", "js/app.daf765af.js"],
-			"css": ["css/app.daf765af.css"]
+			"js": ["js/382.ee04007e.js", "js/app.23a8a185.js"],
+			"css": ["css/app.23a8a185.css"]
 		}
 	]
 }
