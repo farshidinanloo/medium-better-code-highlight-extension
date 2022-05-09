@@ -28,7 +28,7 @@ function getSapnText(element) {
 		data.push(item.innerText);
 	}
 
-	let code = data.join(' ').replaceAll('" "', '\n').replaceAll('"', '');
+	let code = data.join(' ');
 
 	try {
 		const forattedCode = prettier.format(code, {
