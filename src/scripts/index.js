@@ -4,11 +4,21 @@ import prettier from 'prettier/standalone';
 import parserBabel from 'prettier/parser-babel';
 import '../styles/style.css';
 
-const elements = document.querySelectorAll('pre');
+let MAX_TRY_COUNT = 15;
 
-for (const element of elements) {
-	getSapnText(element);
-}
+let elements = [];
+
+let timeout = setInterval(() => {
+	elements = document.querySelectorAll('pre');
+	MAX_TRY_COUNT -= 1;
+
+	if (elements.length !== 0 || MAX_TRY_COUNT < 0) {
+		clearInterval(timeout);
+	}
+	for (const element of elements) {
+		getSapnText(element);
+	}
+}, 1000);
 
 function getSapnText(element) {
 	let parentNode = element.childNodes[0].parentNode;
