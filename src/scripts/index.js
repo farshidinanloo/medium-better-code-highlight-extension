@@ -24,12 +24,12 @@ function getCodeText(element) {
 	let code = element.innerText;
 
 	try {
-		const forattedCode = prettier.format(code, {
+		const formattedCode = prettier.format(code, {
 			parser: 'babel',
 			plugins: [parserBabel],
 		});
-		if (forattedCode) {
-			code = forattedCode;
+		if (formattedCode) {
+			code = formattedCode;
 		}
 	} catch (error) {}
 
