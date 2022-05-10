@@ -21,9 +21,9 @@
 				<pre>
           <span>
             const processData = ({ userData, sessionPrefences }) =>   save('userData', userData)
-  .then(() => save('session', sessionPrefences))
-  .then(() => ({ userData, sessionPrefences }))
-  .catch(handleErrorSomehow)
+  						.then(() => save('session', sessionPrefences))
+  									.then(() => ({ userData, sessionPrefences }))
+  															.catch(handleErrorSomehow)
           </span>
         </pre>
 

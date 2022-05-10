@@ -16,19 +16,12 @@ let timeout = setInterval(() => {
 		clearInterval(timeout);
 	}
 	for (const element of elements) {
-		getSapnText(element);
+		getCodeText(element);
 	}
 }, 1000);
 
-function getSapnText(element) {
-	let parentNode = element.childNodes[0].parentNode;
-	const data = [];
-
-	for (const item of element.childNodes) {
-		data.push(item.innerText);
-	}
-
-	let code = data.join(' ');
+function getCodeText(element) {
+	let code = element.innerText;
 
 	try {
 		const forattedCode = prettier.format(code, {
@@ -44,6 +37,6 @@ function getSapnText(element) {
 		language: 'javascript',
 	}).value;
 
-	parentNode.classList.add('hljs');
-	parentNode.innerHTML = `<code class='hljs'>${html}</code>`;
+	element.classList.add('hljs');
+	element.innerHTML = `<code class='hljs'>${html}</code>`;
 }
