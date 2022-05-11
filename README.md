@@ -1,4 +1,4 @@
-### this code extension change code block form this style: 
+### this chrome extension change medium code block form this style: 
 
 ![medium_default](./assets/default.PNG)
 
