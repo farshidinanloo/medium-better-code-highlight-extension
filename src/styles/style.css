@@ -6,10 +6,8 @@ pre code {
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	white-space: pre-wrap;
-}
-
-pre code {
 	font-size: 0.9rem !important;
+	line-height: 1.5;
 }
 
 pre code * {
