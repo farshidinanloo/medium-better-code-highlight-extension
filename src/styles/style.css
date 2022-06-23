@@ -8,6 +8,9 @@ pre code {
 	white-space: pre-wrap;
 	font-size: 0.9rem !important;
 	line-height: 1.5;
+	font-family: Fira Code, Martian Mono Std Lt, JetBrains Mono, Cascadia Code,
+		Operator Mono, Dank Mono, Vazir, operator mono lig, operator mono light,
+		Consolas;
 }
 
 pre code * {
