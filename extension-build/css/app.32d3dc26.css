@@ -1,6 +1,146 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#011627;color:#d6deeb}.hljs-keyword{color:#c792ea;font-style:italic}.hljs-built_in{color:#addb67;font-style:italic}.hljs-type{color:#82aaff}.hljs-literal{color:#ff5874}.hljs-number{color:#f78c6c}.hljs-regexp{color:#5ca7e4}.hljs-string{color:#ecc48d}.hljs-subst{color:#d3423e}.hljs-symbol{color:#82aaff}.hljs-class{color:#ffcb8b}.hljs-function{color:#82aaff}.hljs-title{color:#dcdcaa;font-style:italic}.hljs-params{color:#7fdbca}.hljs-comment{color:#637777;font-style:italic}.hljs-doctag{color:#7fdbca}.hljs-meta,.hljs-meta .hljs-keyword{color:#82aaff}.hljs-meta .hljs-string{color:#ecc48d}.hljs-section{color:#82b1ff}.hljs-attr,.hljs-name,.hljs-tag{color:#7fdbca}.hljs-attribute{color:#80cbc4}.hljs-variable{color:#addb67}.hljs-bullet{color:#d9f5dd}.hljs-code{color:#80cbc4}.hljs-emphasis{color:#c792ea;font-style:italic}.hljs-strong{color:#addb67;font-weight:700}.hljs-formula{color:#c792ea}.hljs-link{color:#ff869a}.hljs-quote{color:#697098;font-style:italic}.hljs-selector-tag{color:#ff6363}.hljs-selector-id{color:#fad430}.hljs-selector-class{color:#addb67;font-style:italic}.hljs-selector-attr,.hljs-selector-pseudo{color:#c792ea;font-style:italic}.hljs-template-tag{color:#c792ea}.hljs-template-variable{color:#addb67}.hljs-addition{color:rgba(173,219,103,1);font-style:italic}.hljs-deletion{color:rgba(239,83,80,0.56471);font-style:italic}
+pre code.hljs {
+  display: block !important;
+  overflow-x: auto !important;
+  padding: 1em !important;
+}
+code.hljs {
+  padding: 3px 5px !important;
+}
+.hljs {
+  background: #011627 !important;
+  color: #d6deeb !important;
+}
+.hljs-keyword {
+  color: #c792ea !important;
+}
+.hljs-built_in {
+  color: #addb67 !important;
+}
+.hljs-type {
+  color: #82aaff !important;
+}
+.hljs-literal {
+  color: #ff5874 !important;
+}
+.hljs-number {
+  color: #f78c6c !important;
+}
+.hljs-regexp {
+  color: #5ca7e4 !important;
+}
+.hljs-string {
+  color: #ecc48d !important;
+}
+.hljs-subst {
+  color: #d3423e !important;
+}
+.hljs-symbol {
+  color: #82aaff !important;
+}
+.hljs-class {
+  color: #ffcb8b !important;
+}
+.hljs-function {
+  color: #82aaff !important;
+}
+.hljs-title {
+  color: #dcdcaa !important;
+}
+.hljs-params {
+  color: #7fdbca !important;
+}
+.hljs-comment {
+  color: #637777 !important;
+}
+.hljs-doctag {
+  color: #7fdbca !important;
+}
+.hljs-meta,
+.hljs-meta .hljs-keyword {
+  color: #82aaff !important;
+}
+.hljs-meta .hljs-string {
+  color: #ecc48d !important;
+}
+.hljs-section {
+  color: #82b1ff !important;
+}
+.hljs-attr,
+.hljs-name,
+.hljs-tag {
+  color: #7fdbca !important;
+}
+.hljs-attribute {
+  color: #80cbc4 !important;
+}
+.hljs-variable {
+  color: #addb67 !important;
+}
+.hljs-bullet {
+  color: #d9f5dd !important;
+}
+.hljs-code {
+  color: #80cbc4 !important;
+}
+.hljs-emphasis {
+  color: #c792ea !important;
+}
+.hljs-strong {
+  color: #addb67 !important;
+  font-weight: 700 !important;
+}
+.hljs-formula {
+  color: #c792ea !important;
+}
+.hljs-link {
+  color: #ff869a !important;
+}
+.hljs-quote {
+  color: #697098 !important;
+}
+.hljs-selector-tag {
+  color: #ff6363 !important;
+}
+.hljs-selector-id {
+  color: #fad430 !important;
+}
+.hljs-selector-class {
+  color: #addb67 !important;
+}
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #c792ea !important;
+}
+.hljs-template-tag {
+  color: #c792ea !important;
+}
+.hljs-template-variable {
+  color: #addb67 !important;
+}
+.hljs-addition {
+  color: rgba(173, 219, 103, 1) !important;
+}
+.hljs-deletion {
+  color: rgba(239, 83, 80, 0.56471) !important;
+ }
 
-pre{border-radius:10px}pre code{border-radius:10px;-webkit-box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;white-space:pre-wrap;font-size:0.9rem !important;line-height:1.5;font-family:Fira Code, Martian Mono Std Lt, JetBrains Mono, Cascadia Code, Operator Mono, Dank Mono, Consolas, Vazir, operator mono lig, operator mono light}pre code *{font-style:normal !important}
-
+pre {
+  border-radius: 10px !important;
+ padding: 0 !important;
+}
+pre code {
+  border-radius: 10px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  white-space: pre-wrap !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  font-family: Fira Code, Martian Mono Std Lt, JetBrains Mono, Cascadia Code,
+    Operator Mono, Dank Mono, Consolas, Vazir, operator mono lig,
+    operator mono light;
+}
+pre code * {
+  font-style: normal !important;
+}
 
 /*# sourceMappingURL=app.32d3dc26.css.map*/
