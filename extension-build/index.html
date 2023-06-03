@@ -8,9 +8,9 @@
 			name="description"
 			content="A light foundation for your next frontend project based on webpack."
 		/>
-		<script defer="defer" src="js/404.4ed691dc.js"></script>
-		<script defer="defer" src="js/app.32d3dc26.js"></script>
-		<link href="css/app.32d3dc26.css" rel="stylesheet" />
+		<script defer="defer" src="js/23.e75f1589.js"></script>
+		<script defer="defer" src="js/app.ac1324bb.js"></script>
+		<link href="css/app.ac1324bb.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div>
@@ -22,10 +22,18 @@
 				>
 				<pre>
           <span>
-            const processData = ({ userData, sessionPrefences }) =>   save('userData', userData)
-  						.then(() => save('session', sessionPrefences))
-  									.then(() => ({ userData, sessionPrefences }))
-  															.catch(handleErrorSomehow)
+						type UserId = string & { readonly brand: unique symbol };
+						type EmailAddress = string & { readonly brand: unique symbol };
+						
+						const createUserId = (value: string): UserId => {
+							// Validation here
+							return value as UserId;
+						}
+						
+						const createEmailAddress = (value: string): EmailAddress => {
+							// Validation here, etc.
+							return value as EmailAddress;
+						}
           </span>
         </pre>
 				<span

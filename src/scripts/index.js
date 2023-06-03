@@ -1,5 +1,8 @@
 import hljs from 'highlight.js';
-import 'highlight.js/styles/night-owl.css';
+// import 'highlight.js/styles/github-dark-dimmed.css';
+// import 'highlight.js/styles/night-owl.css';
+// import 'highlight.js/styles/srcery.css';
+import 'highlight.js/styles/base16/material.css';
 import prettier from 'prettier/standalone';
 import parserBabel from 'prettier/parser-babel';
 import '../styles/style.css';
@@ -10,14 +13,18 @@ let elements = [];
 
 let timeout = setInterval(() => {
 	elements = document.querySelectorAll('pre');
+
 	MAX_TRY_COUNT -= 1;
 
 	if (elements.length !== 0 || MAX_TRY_COUNT < 0) {
 		clearInterval(timeout);
 	}
+	
 	for (const element of elements) {
 		getCodeText(element);
 	}
+
+
 }, 1000);
 
 function getCodeText(element) {
